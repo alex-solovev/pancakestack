@@ -1,0 +1,112 @@
+@font-face {
+	font-family: 'Potato Pancakes';
+	src: url('../fonts/PotatoPancakes.woff2') format('woff2'),
+	url('../fonts/PotatoPancakes.woff') format('woff'),
+	url('../fonts/PotatoPancakes.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Ubuntu", "Arial", sans-serif;
+	font-size: 16px;
+}
+
+html,
+body,
+.page {
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+.page {
+	background: rgb(255, 76, 210);
+	background: linear-gradient(0deg, rgba(255, 76, 210, 1) 0%, rgba(29, 218, 255, 1) 100%);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-family: "Potato Pancakes", sans-serif;
+}
+
+h1 {
+	margin: 0;
+	font-size: 4.25rem;
+}
+
+.header {
+	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+article h1 {
+	font-size: 3rem;
+}
+
+a {
+	font-weight: bold;
+	font-size: 1.75rem;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+
+a::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 5px;
+	border-radius: 10px;
+	background-color: currentColor;
+	transform: translateY(0);
+	transition: all 0.25s;
+}
+
+a:hover::after {
+	transform: translateY(-5px);
+	height: 3px;
+	border-radius: 6px;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+article {
+	padding: 1.5rem 20% 3rem;
+	height: 100vh;
+	overflow: auto;
+	font-size: 1.25rem;
+}
+
+article a {
+	font-size: inherit;
+	text-decoration: underline;
+}
+
+article a::after {
+	display: none;
+}
+
+h1 a {
+	text-decoration: none;
+	font-size: inherit;
+}
