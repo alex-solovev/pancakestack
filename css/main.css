@@ -110,3 +110,7 @@ h1 a {
 	text-decoration: none;
 	font-size: inherit;
 }
+
+h1 a::after {
+	display: none;
+}
