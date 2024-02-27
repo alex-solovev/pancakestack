@@ -36,11 +36,12 @@ body,
 
 h1 {
 	font-family: "Potato Pancakes", sans-serif;
+	text-align: center;
+	font-size: 2.5rem;
 }
 
 h1 {
 	margin: 0;
-	font-size: 4.25rem;
 }
 
 .header {
@@ -52,12 +53,12 @@ h1 {
 }
 
 article h1 {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 a {
 	font-weight: bold;
-	font-size: 1.75rem;
+	font-size: 1.3rem;
 	color: #fff;
 	text-decoration: none;
 	position: relative;
@@ -91,7 +92,7 @@ a:hover::after {
 }
 
 article {
-	padding: 1.5rem 20% 3rem;
+	padding: 1.5rem 2rem 3rem;
 	height: 100vh;
 	overflow: auto;
 	font-size: 1.25rem;
@@ -113,4 +114,22 @@ h1 a {
 
 h1 a::after {
 	display: none;
+}
+
+@media screen and (min-width: 640px) {
+	h1 {
+		font-size: 4.25rem;
+	}
+
+	a {
+		font-size: 1.75rem;
+	}
+
+	article {
+		padding: 1.5rem 20% 3rem;
+	}
+
+	article h1 {
+		font-size: 3rem;
+	}
 }
